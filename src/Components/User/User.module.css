@@ -1,0 +1,92 @@
+.user{
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    font-size: 20px;
+}
+.user button{
+    background-color: brown;
+    color: white;
+    padding: 15px;
+    border: 0;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.userInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.userInfo div{
+    width: 20%;
+}
+.userInfo h4{
+    text-transform: uppercase;
+}
+.userInfo .show{
+    display: flex;
+    justify-content: end;
+}
+.details{
+    border: 2px solid rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    display: none;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.detailsInfo{
+    display: flex;
+    flex-direction: row;
+}
+.detailsInfo h4{
+    text-transform: capitalize;
+}
+.detailsInfo div{
+    width: 50%;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    .userInfo{
+        flex-direction: row;
+        
+    }
+    .userInfo div{
+        width: 35%;
+        /* background-color: yellow; */
+    }
+}
+@media (max-width: 767.98px){
+ 
+    .userInfo{
+        flex-direction: column;
+        justify-content: right;
+    }
+    .userInfo div{
+        width: 100%;
+    }
+    .userInfo .show{
+        display: flex;
+        justify-content: center;
+    }
+    .detailsInfo{
+        flex-direction: column;
+    }
+    .detailsInfo div{
+        width: 100%;
+    }
+}
